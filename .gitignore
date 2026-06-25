@@ -1,0 +1,13 @@
+target/
+.idea/
+*.iml
+
+.env
+credentials/
+tokens/
+logs/
+last-notified.json
+PROJECT_DOCUMENTATION.md
+
+*.key
+*.secret
