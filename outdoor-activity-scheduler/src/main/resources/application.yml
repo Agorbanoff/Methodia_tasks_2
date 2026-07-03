@@ -1,0 +1,27 @@
+spring:
+  main:
+    web-application-type: none
+
+app:
+  days-ahead: 2
+
+  email:
+    enabled: true
+    to: "alexandargorbanov@gmail.com"
+
+  calendar:
+    enabled: true
+    credentials-path: credentials/credentials.json
+    tokens-directory-path: tokens
+    calendar-id: primary
+
+  schedule:
+    enabled: true
+    cron: "0 */1 * * * *"
+
+  excel:
+    input-path: input/input.xlsx
+    output-path: output/output.xlsx
+    run-on-startup: false
+    dry-run: false
+    create-template-if-missing: true

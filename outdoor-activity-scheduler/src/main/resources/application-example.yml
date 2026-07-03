@@ -1,0 +1,23 @@
+spring:
+  main:
+    web-application-type: none
+
+app:
+  days-ahead: 2
+  email:
+    enabled: false
+    to: ""
+  calendar:
+    enabled: false
+    credentials-path: credentials/credentials.json
+    tokens-directory-path: tokens
+    calendar-id: primary
+  schedule:
+    enabled: false
+    cron: "0 0 * * * *"
+  excel:
+    input-path: input/activity-input.xlsx
+    output-path: output/activity-results.xlsx
+    run-on-startup: true
+    dry-run: true
+    create-template-if-missing: true
